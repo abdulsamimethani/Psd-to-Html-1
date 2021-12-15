@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #02030e;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #070733;
+    padding: 20px;
+    /* width: 100vw; */
+    height: 100vh;
+    transition: 0.3s linear all;
+    transform: translate(-100%);
+    z-index: 1;
+}
+
+.toggle-menu {
+    transform: translate(0%);
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-btn {
+    background-color: transparent;
+    color: red;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    transition: 0.3s all linear;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    transform: rotate(360deg);
+}
+
+
+.open-btn button {
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.menu-links a {
+    font-size: 1.3em;
+    font-weight: bolder;
+    transition: 0.3s linear all;
+    color: #ffffff;
+    padding: 25px;
+}
+
+.menu-links a:hover {
+    color: wheat;
+}
+
+.close-btn {
+    position: relative;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 220px;
+}
+
+.social-links a {
+    font-size: 35px;
+    color: #ffffff;
+    padding: 0;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0 4em; */
+        background-color: #02030e;
+        /* width: 100vw; */
+        height: 13vh;
+        transform: translate(0%);
+    }
+
+    .navbar .logo {
+        padding: 12px;
+    }
+
+    .menu-links {
+        flex-direction: row;
+    }
+
+    .menu-links a {
+        font-size: 1.3em;
+        font-weight: bolder;
+        color: #ffffff;
+        transition: 0.3s linear all;
+        padding: 0 20px;
+    }
+
+    .menu-links a:hover {
+        color: wheat;
+        padding: 0 23px;
+    }
+
+    .open-btn, .close-btn {
+        display: none;
+    }
+
+    .social-links {
+        top: 0;
+    }
+
+    .social-links a {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+}
+
+
+.main-heading {
+    position: absolute;
+    top: 0;
+    font-size: 45px;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 100px 110px;
+    z-index: -1;
+}
+
+.square {
+    position: absolute;
+    top: 350px;
+    width: 384px;
+    max-width: 384px;
+    height: 637px;
+    background: linear-gradient(#56779d, #292d33);
+    z-index: -1;
+
+}
+
+.main-img {
+    position: absolute;
+    top: 433px;
+    left: 126px;
+    z-index: -1;
+
+}
+
+.main-img img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.cards {
+    position: absolute;
+    top: 265px;
+    right: 100px;
+}
+
+.some-card {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background: #ffffff;
+    color: #000000;
+    margin: 15px 0;
+    text-align: center;
+    padding: 25px;
+}
+
+.some-card .fas {
+    color: rgb(32, 29, 230);
+    font-size: 70px;
+}
+
+.some-card h4 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.some-card p {
+    font-style: italic;
+}
+
+@media screen and (max-width: 1030px) {
+    .cards {
+        width: 399px;
+        top: 750px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
